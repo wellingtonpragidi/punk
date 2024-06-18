@@ -1,0 +1,19 @@
+#foot {
+    position: relative;
+    border-top: 1px solid var(--borderColor);
+    padding: 5px 15px;
+    height: 27px;
+}
+#foot::after {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    content: 'Punk';
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    opacity: .5;
+}
+#foot #range-parent-element {
+    display: inline-block;
+    font-family: 'srcCode';
+}

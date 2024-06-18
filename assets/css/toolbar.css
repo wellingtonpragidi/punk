@@ -1,0 +1,246 @@
+#toolbar {
+    position: relative;
+    padding: 5px;
+    border-bottom: 1px solid var(--borderColor);
+    max-height: 42px !important;
+    white-space: nowrap;
+}
+#toolbar.toolbar_hidden button, #toolbar.toolbar_hidden span {
+    opacity: 0;
+}
+#toolbar > div {
+    position: relative;
+    display: inline-block;
+}
+#toolbar button {
+    font-family: 'Muli';
+    position: relative;
+    display: block;
+    font-size: 1.17rem;
+    margin: 0 3px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    color: var(--btnColor);
+    background-color: var(--btnBackground);
+    border: 1px solid var(--btnBorder);
+    transition: 0.06s;
+}
+#toolbar button[ico]::before {
+    font-size: 1.1rem;
+}
+#toolbar .block button, #toolbar .inline button {
+    padding: 2px 8px;
+    top: -0.5px;
+    font-size: 1.2rem;
+}
+#toolbar .quote button[ico] {
+    color: var(--btnIcoAdjustColor);
+}
+#toolbar button:hover {
+    color: var(--btnColorHover);
+    background-color: var(--btnBackgroundHover);
+    border: 1px solid var(--btnBorderHover);
+}
+#toolbar button:active, #toolbar button.active, #toolbar button.action {
+    color: var(--btnColorFocus);
+    background-color: var(--btnBackgroundFocus);
+    border: 1px solid var(--btnBorderFocus);
+}
+#toolbar button.open-options::after {
+    font-family: "Icon";
+    content: '\f0dc'; 
+    font-size: 0.75rem; 
+    transform: scale(0.8) !important;
+    transition: none;
+    margin-left: 6px;
+    opacity: .65;
+}
+/* #switch-mode.mode_code ~ label */
+#toolbar #switch {
+    position: absolute;
+    top: 13px;
+    right: -2px;
+}
+#toolbar #switch label {
+    position: relative;
+    display: block;
+    margin: 0 3px;
+    padding: 1px 5px;
+    line-height: 0;
+    font-size: 1.25rem;
+    color: var(--labelColor);
+    cursor: pointer;
+    transition: 0.06s;
+    z-index: 883;
+}
+#toolbar #switch label[ico]::before {
+    position: relative;
+    top: 2px;
+    font-size: 1.6rem;
+}
+#toolbar #switch label:hover {
+    color: var(--labelColorHover);
+}
+#toolbar #switch-mode:checked ~ label {
+    color: var(--labelCheckedColor);
+    text-shadow: 2.4px 2.4px 1px rgba(0, 0, 0, 0.35);
+}
+#toolbar input#switch-mode {
+    display: none;
+}
+
+#toolbar .options {
+    position: absolute;
+    display: block;
+    width: 80px;
+    margin-top: 6px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.20), -1px 0 1px 0 rgba(0, 0, 0, 0.20);
+    background-color: transparent;
+    z-index: 883;
+}
+#toolbar .options button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 0 0;
+    padding: 1.5px 4px 2px 4px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0;
+    color: var(--btnDropColor);
+    background-color: var(--btnDropBackground);
+    border-top: 1px solid var(--btnDropBorderTop);
+    border-bottom: 1px solid var(--btnDropBorderBottom);
+}
+#toolbar .options button:first-child { 
+    border-top: none; 
+}
+#toolbar .options button:last-child { 
+    border-bottom: none; 
+}
+#toolbar .options button:hover, #toolbar .options button:active, #toolbar .options button:focus {
+    color: var(--btnDropColorHover);
+    background-color: var(--btnDropBackgroundHover);
+}
+#toolbar .options button.action {
+    color: var(--btnColorFocus);
+    background-color: var(--btnBackgroundFocus);
+    border: 1px solid var(--btnBorderFocus);
+}
+#toolbar button.open-options ~ .options {
+    display: none;
+}
+#toolbar button.open-options.active ~ .options {
+    display: block;
+}
+#toolbar #inline .options button mark {
+    display: inline-block;
+    background-color: var(--markBackground);
+    padding: 0 4px;
+    border-radius: 3px;
+    font-family: 'SrcCode', monospace;
+}
+#toolbar #grid .options {
+    width: 130px;
+}
+#toolbar #grid .options button {
+    position: relative;
+    padding: 9px 4px;
+}
+#toolbar #grid .options button::before {
+    position: relative;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 7px;
+}
+#toolbar #grid .options button.cn__x__::before {
+    background-image: linear-gradient(to right, 
+        #666666 0 48.5%, 
+        transparent 48.5% 51.5%, 
+        #666666 51.5% 100%
+    );
+}
+#toolbar #grid .options button.cn___x_::before {
+    background-image: linear-gradient(to right, 
+        #666666 0 66.6%,
+        transparent 66.6% 69.6%, 
+        #666666 69.6% 100%
+    );
+}
+#toolbar #grid .options button.cn_x___::before {
+    background-image: linear-gradient(to left, 
+        #666666 0 66.6%,  
+        transparent 66.6% 69.6%, 
+        #666666 69.6% 100%
+    );
+}
+#toolbar #grid .options button.cn_x_x_::before {
+    background-image: linear-gradient(to left, 
+        #666666 0 30%, 
+        transparent 30% 33%, 
+        #666666 33% 66.6%, 
+        transparent 66.6% 69.6%, 
+        #666666 69.6% 100%
+    );
+}
+.cn__x__:hover::before, .cn___x_:hover::before, .cn_x___:hover::before, .cn_x_x_:hover::before {
+    filter: brightness(70%);
+}
+#toolbar #textalign .options {
+    width: 140px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+}
+#toolbar #textalign .options button {
+    display: inline-block;
+    margin: 0 -1.5px;
+    padding: 3px 7px;
+    width: auto;
+    border: none;
+}
+#toolbar #textalign .options button::before {
+    font-size: 1.29rem;
+}
+#toolbar #textalign .options button:last-child {
+    margin-right: 0;
+}
+#toolbar #color .options {
+    width: 148px;
+    background-color: #F5F5F5;
+    content: ' ';
+    clear: both;
+}
+#toolbar #color .options button {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0.5px 0.5px;
+    border: none;
+}
+#toolbar #fontsize .options button {
+    text-align: center;
+}
+#toolbar .divider::before {
+    position: relative;
+    content: " | ";
+    top: -8px;
+    display: inline-block;
+    transform: scale3d(0.825, 2.9, 1.0);
+    padding: 0 5px;
+    color: var(--borderColor);
+}
+/*#toolbar .divider {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+#toolbar .divider::before {
+    position: absolute;
+    top: -5px;
+    display: block;
+    content: " | ";
+    transform: scale3d(0.8, 2.6, 1.0);
+}*/

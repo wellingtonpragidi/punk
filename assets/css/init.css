@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Icon';
+    src: url('assets/fonts/icon.eot?2717170');
+    src: url('assets/fonts/icon.eot?2717170#iefix') format('embedded-opentype'),
+         url('assets/fonts/icon.woff2?2717170') format('woff2'),
+         url('assets/fonts/icon.woff?2717170') format('woff'),
+         url('assets/fonts/icon.ttf?2717170') format('truetype'),
+         url('assets/fonts/icon.svg?2717170#ico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/Ubuntu.ttf') format('truetype');
+}   
+@font-face {
+    font-family: 'SrcCode';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/SrcCode.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/Muli.ttf') format('truetype');
+}
+
+#punk {
+    position: relative;
+    background-color: var(--bgColor);
+    border: 1px solid var(--borderColor);
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+}
+#punk * {
+    outline: 0; 
+    box-sizing: border-box;
+}
+
+.screen_reader {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    font-size: 14px;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important
+    word-wrap: normal !important;
+}

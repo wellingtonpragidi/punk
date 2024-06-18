@@ -1,0 +1,72 @@
+#punk {
+
+    /** TOLLBAR */
+    --bgColor: #FFFFFF;
+    --borderColor: #B2B2B2;
+
+    --srCodeColor: #8E9466;
+    --srCodeBackground: #1D2120;
+    --srCodeBorder: #675D37;
+
+    --btnColor: #505050;
+    --btnIcoAdjustColor: #212121;
+    --btnBackground: #F6F6F6;
+    --btnBorder: #E9E9E9;
+    --btnColorHover: #333333;
+    --btnBackgroundHover: #E9E9E9;
+    --btnBorderHover: #DDDDDD;
+    --btnColorFocus: #222222;
+    --btnBackgroundFocus: #DDDDDD;
+    --btnBorderFocus: #CCCCCC;
+
+    --labelColor: #707070;
+    --labelColorHover: #202020;
+    --labelCheckedColor: #9C2F2F;
+
+    --btnDropColor: #666666;
+    --btnDropBackground: #F6F6F6;
+    --btnDropBorderTop: #FFFFFF;
+    --btnDropBorderBottom: #D2D2D2;
+    --btnDropColorHover: #333333;
+    --btnDropBackgroundHover: #E9E9E9;
+
+    /** + CONTENT */
+    --txtColor: #444444;
+    --focusBackground: #E9E9E9;
+    --linkColor: #056AA1;
+    --markBackground: #EDED72;
+    --blockquoteBorder: #BBBBBB;
+    --ruleBorderBottom: #CCCCCC;
+    --ruleBorderTop: #666666;
+    --preBackground: #;
+    --preTextShadow: #;
+    --codeBackground: #;
+    --codeTextShadow: #;
+    --contentSelectionColor: #FFFFFF;
+    --contentSelectionBackground: #056AA1;
+}
+.popup {
+    --popup__background: rgba(0, 0, 0, 0.60);
+    --modal__color: #616161;
+    --modal__background: #F2F2F2;
+    --modal__border_light: 1px solid #FFFFFF;
+    --modal__border_dark: 1px solid #E7E7E7;
+    --modal__border_color_light: #FFFFFF;
+    --modal__border_color_dark: #E7E7E7;
+    --modal__box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --modal__border-radius: 3px;
+    --modalBtn__background: #E7E7E7;
+    --modalBtn__border-color: #DDD;
+    --modalElemt__box-shadow: rgba(255, 255, 255, 0.85);
+    --modalElemt__text-shadow: #FFFFFF;
+    --modalHeader__background: #E7E7E7;
+}
+.listener-tooltip {
+    --labelColor: #757575;
+    --btnColor: darkblue;
+    --btnBorder: darkblue;
+    --btnBackground: lightblue;
+    --inputColor: #555555;
+    --inputBorder: #666666;
+    --inputBackground: #D2D2D2;
+}
